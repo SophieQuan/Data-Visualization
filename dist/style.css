@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+header{
+    border-left:0.3vw solid #0A8379;
+    padding: 50px 0;
+    position: fixed;
+    max-width: 20%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    right:0;
+    justify-content: center;
+    padding: 1vh 1vw;
+}
+section{
+    width: 80%;
+    height: auto;
+}
+h1{
+    color: #0A8379;
+    text-align: center;
+    font-size: 2.5vh;
+}
+h3{
+    text-align: center;
+    color: #C35300;
+    font-size: 2vh;
+}
+h2{
+    padding: 4vh 0;
+}
+h2,p{
+    color: #0A8379;
+    text-align: center;
+}
+
+/* styling for 2 button */
+button {
+    max-width: 80%;
+    width: 100%;
+    height: 5vh;
+    background-color: #0A8379;
+    color: #fff;
+    font-size: 2vh;
+    font-family: arial,sans-serif;
+    margin-top: 20px;
+    border-radius: 100px;
+    border: 0px;
+}
+button:hover{
+    background-color: #C35300;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+#showData{
+    width: 30%;
+}
+/* styling for when user clicks on button */
+button:active {
+    background-color:#C35300;
+    color: #fff;
+    border-bottom: 2px solid black;
+}
+
+/* styling for graphs */
+#graph svg{
+    overflow: visible;
+    padding: 3vw;
+    box-shadow: 0.5vh 0.2vh 0 #0A8379; 
+    border: 1vh solid #E5E5E5;
+    margin: 0 auto;
+    width: 100%;
+}
+/* label section styles */
+.label{
+    width: 90%;
+    height: auto;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0A8379; 
+    border-radius: 5px;
+    margin-top: 2vh;
+    font-size: 1.7vh;
+}
+.circle{
+    max-width: 100%;
+    width: 1.3vw;
+    height: 1.3vw;
+    border-radius: 50%;
+}
+.orange{
+    background-color: #C35300
+}
+.green{
+    background-color: #0A8379;
+}
+.desc{
+    max-width: 80%;
+    height: auto;
+    margin-left: 1vh;
+    color: #0A8379;
+    text-align: left;
+}
+.top, .bottom{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.bottom{
+    padding-top: 2vh;
+}
+.bar{
+    transition: 0.3s ease-out;
+}
+.bar:hover{
+    fill: #E5E5E5;
+    transition: all 0.2s ease-in;
+}
+.lineNum{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+.lineNum{
+    opacity: 0;
+    fill:#C35300;
+    transition: 1s ease-out;
+}
+.lineNum:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+svg .chartNum{
+    /* opacity: 0; */
+    /* display: none; */
+    transition: 1s ease-out;
+    /* font-size: 2vh; */
+    font-weight: bolder;
+}
+.opacityOff{
+    opacity: 0;
+}
+
+
+/* animation */
+#tempLine {
+	stroke-dasharray: 10000;
+	stroke-dashoffset: 10000;
+	animation: 15s drawLine linear forwards;
+}
+
+@keyframes drawLine {
+	to {
+		stroke-dasharray: 10000;
+		stroke-dashoffset: 0;
+	}
+}
+
+/* splash screen */
+#graph{
+	opacity: 0;
+}
+
+#splash {
+	position: fixed;
+	width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+    background-color: #E5E5E5 ;
+}
+#splash img{
+    width: 100%;
+    position: absolute;
+}
+#splashScreen{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    
+}
+#mainInfo{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#splashScreen h2, #splashScreen p{
+    color: #42210B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#splashScreen h1{
+    color: #0A8379;
+    text-align: right;
+    padding: 1vh;
+}
+#splashScreen h2{
+    font-size: 4vh;
+    color: #42210B;
+    text-align: left;
+    padding: 1vh 0;
+}
+.underline{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: 0.3vh;
+    background-color: #42210B;
+}
+#splashScreen p{
+    font-size: 2.5vh;
+    text-align: left;
+}
+
+#splashScreen button{
+    border: 1px solid #E5E5E5;
+    transition: 0.5s ease-out;
+    bottom: 20vh;
+    
+}
+#splashScreen button:hover{
+    border: none;
+    transition: all 0.25s Linear ease-in;
+}
+.active{
+    background-color: #C35300;
+}
+.theButton:focus{
+    outline: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #mainInfo{
+        width: 80%;
+    }
+    #mainInfo button{
+        width: 60%;
+        margin-top: 3vh;
+    }
+    header{
+        background-color: #E5E5E5;
+        padding: 50px 0;
+        top: 0;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        padding: 1vh 1vw;
+    }
+    button{
+        border-radius: 5px;
+        margin: 0.2vh;
+        font-size: 2vh;
+    }
+    #buttons {
+        max-width: 100%;
+        width: 90%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 0.2vh;
+    }
+    section{
+        width: 100%;
+    }
+    h1,
+    button{
+        margin-top: 1vh;
+    }
+    .label{
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        width: 60%;
+        margin-bottom: 0.5vh;
+        font-size: 1.5vh;
+    }
+    .bottom{
+        padding-top: 0.5vh;
+    }
+    
+}

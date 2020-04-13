@@ -1,0 +1,118 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6e6e6;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-3, .cls-4 {
+        fill: #42210b;
+      }
+
+      .cls-4 {
+        font-size: 48px;
+      }
+
+      .cls-13, .cls-4, .cls-7, .cls-8 {
+        font-family: Helvetica;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke: #009245;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-13, .cls-7 {
+        font-size: 18px;
+      }
+
+      .cls-12, .cls-7 {
+        fill: #8c6239;
+      }
+
+      .cls-8 {
+        font-size: 24px;
+      }
+
+      .cls-9 {
+        letter-spacing: -0.05em;
+      }
+
+      .cls-10, .cls-11 {
+        fill: #00a99d;
+      }
+
+      .cls-11 {
+        font-size: 21px;
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-13 {
+        fill: #fff;
+      }
+
+      .cls-14 {
+        letter-spacing: -0.04em;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="683" cy="384" r="554.05" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7b299"/>
+      <stop offset="0.26" stop-color="#f15a24"/>
+      <stop offset="0.73" stop-color="#ed1c24"/>
+      <stop offset="0.99" stop-color="#42210b"/>
+    </radialGradient>
+  </defs>
+  <title>bg</title>
+  <g>
+    <rect class="cls-1" width="1366" height="768"/>
+    <path class="cls-2" d="M1365,1V767H1V1H1365m1-1H0V768H1366V0Z"/>
+  </g>
+  <circle class="cls-3" cx="1129.5" cy="560.5" r="9.5"/>
+  <text id="heading" class="cls-4" transform="translate(319.85 393.03)">Data <tspan class="cls-5" x="114.73" y="0">V</tspan><tspan x="145.9" y="0">isualization</tspan></text>
+  <g id="line_chart" data-name="line chart">
+    <polyline class="cls-6" points="18.5 97.5 153 393 574 126 712.5 308.5 1129.45 561 1356.5 299.5"/>
+    <circle class="cls-3" cx="18.5" cy="97.5" r="9.5"/>
+    <circle class="cls-3" cx="153.5" cy="393.5" r="9.5"/>
+    <circle class="cls-3" cx="574.5" cy="126.5" r="9.5"/>
+    <circle class="cls-3" cx="711.5" cy="308.5" r="9.5"/>
+    <circle class="cls-3" cx="1356.5" cy="299.5" r="9.5"/>
+    <text class="cls-7" transform="translate(37.12 106.6)">100</text>
+    <text class="cls-7" transform="translate(144.12 344.6)">50</text>
+    <text class="cls-7" transform="translate(584.12 106.6)">95</text>
+    <text class="cls-7" transform="translate(732.12 289.6)">77</text>
+    <text class="cls-7" transform="translate(1094.12 527.6)">30</text>
+    <text class="cls-7" transform="translate(1279.12 289.6)">63</text>
+  </g>
+  <text id="desc" class="cls-8" transform="translate(319.91 494.22)"><tspan class="cls-9">A</tspan><tspan x="14.7" y="0" xml:space="preserve"> basic D3 bar chart and line chart with live swapping climate </tspan><tspan x="0" y="28.8">data of the</tspan><tspan class="cls-9" x="113.43" y="28.8"> </tspan><tspan x="118.78" y="28.8">Arctic Mountains and Fiords from 1970 to 2010.</tspan><tspan x="0" y="86.4">Data Source by: Statistics Canada</tspan></text>
+  <g id="button">
+    <g>
+      <g id="outline">
+        <path class="cls-10" d="M566,627a11,11,0,0,1,11,11v42a11,11,0,0,1-11,11H332a11,11,0,0,1-11-11V638a11,11,0,0,1,11-11H566m0-1H332a12,12,0,0,0-12,12v42a12,12,0,0,0,12,12H566a12,12,0,0,0,12-12V638a12,12,0,0,0-12-12Z"/>
+      </g>
+      <text id="text" class="cls-11" transform="translate(392.18 666.25)">Show Data</text>
+    </g>
+  </g>
+  <g id="bar_chart" data-name="bar chart">
+    <rect class="cls-12" x="16" y="551" width="47" height="217"/>
+    <rect class="cls-12" x="67" y="518" width="47" height="250"/>
+    <rect class="cls-12" x="120" y="499" width="47" height="269"/>
+    <rect class="cls-12" x="173" y="528" width="47" height="240"/>
+    <rect class="cls-12" x="226" y="570" width="47" height="198"/>
+    <text class="cls-13" transform="translate(125.12 527.6)">100</text>
+    <text class="cls-13" transform="translate(185.12 551.6)">90</text>
+    <text class="cls-13" transform="translate(240.12 594.6)">85</text>
+    <text class="cls-13" transform="translate(80.12 545.6)">95</text>
+    <text class="cls-13" transform="translate(29.12 576.6)">88</text>
+  </g>
+  <text id="name" class="cls-11" transform="translate(503.06 423.38)">The<tspan class="cls-14" x="37.33" y="0"> </tspan><tspan x="42.4" y="0">Arctic Mountains and Fiords </tspan></text>
+</svg>
